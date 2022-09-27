@@ -1,158 +1,310 @@
-/* Paleta de colores
-    Barra de navegacion (#1C77C3)
-    Main (#39A9D8)
-    Footer (#3ACFF1) */
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-
-
 * {
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
+p {
+  color: #dddddd; }
 
 body {
-   font-family: 'Fredoka One', cursive;
-   background-color: #39A9D8;
-}
-
-/* Barra de navegacion */
-header {
-
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   align-content: center;
-   justify-content: center;
-   align-items: center;
-   background-color: #1c77c3;
-
-}
-
-
-header nav ul {
-   display: flex;
-}
-
-header nav ul li {
-   margin: 10px;
-   list-style: none;
-   border: none;
-}
-
-header nav ul li a {
-   color: white;
-   text-decoration: none;
-   font-size: 20px;
-}
-
-header nav ul li a:hover {
-   color: black;
-}
+  font-family: 'Fredoka One', cursive;
+  background-color: #39A9D8;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
 
 /* Main Principal */
-
 main {
-   min-height: 85vh;
-}
+  min-height: 85vh; }
 
-.main-index .textoPrincipal,
-.parrafoPrincipal {
-   color: #002F6C;
-   text-align: center;
-}
-
+header {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c77c3;
+  position: sticky;
+  z-index: 5;
+  min-height: 10vh;
+  max-width: 100%;
+  top: 0; }
+  header nav ul {
+    display: flex; }
+    header nav ul li {
+      margin: 10px;
+      list-style: none;
+      border: none; }
+      header nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px; }
+        header nav ul li a:hover {
+          color: black; }
 
 .main-index .textoPrincipal {
-   font-size: 50px;
-   margin: 35px 0px;
-   font-weight: bold;
-}
+  font-size: 50px;
+  margin: 35px 0px;
+  font-weight: bold;
+  color: #002F6C;
+  text-align: center; }
 
 .main-index .parrafoPrincipal {
-   font-size: 20px;
-}
+  font-size: 20px;
+  text-align: center; }
 
-.piscina1,
-.piscina2,
-.piscina3,
-img {
-   width: 300px;
-   margin: 15px 0px;
-   border-radius: 2%;
-}
+.main-index .contenedorSecciones .seccionPiscinas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .main-index .contenedorSecciones .seccionPiscinas .piscina1 img {
+    width: 300px;
+    margin: 15px 0px;
+    border-radius: 2%; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina1 img:hover {
+      transform: scale(1.1) translate(5px, 5px);
+      transition: .3s;
+      border-radius: 2%; }
+  .main-index .contenedorSecciones .seccionPiscinas .piscina1 .contenidoPiscinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina1 .contenidoPiscinas p {
+      font-size: 20px;
+      margin: 10px 0px;
+      color: black; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina1 .contenidoPiscinas a {
+      color: white;
+      text-decoration: none;
+      font-size: 33px; }
+  .main-index .contenedorSecciones .seccionPiscinas .piscina2 img {
+    width: 300px;
+    margin: 15px 0px;
+    border-radius: 2%; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina2 img:hover {
+      transform: scale(1.1) translate(5px, 5px);
+      transition: .3s;
+      border-radius: 2%; }
+  .main-index .contenedorSecciones .seccionPiscinas .piscina2 .contenidoPiscinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina2 .contenidoPiscinas p {
+      font-size: 20px;
+      margin: 10px 0px;
+      color: black; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina2 .contenidoPiscinas a {
+      color: white;
+      text-decoration: none;
+      font-size: 33px; }
+  .main-index .contenedorSecciones .seccionPiscinas .piscina3 img {
+    width: 300px;
+    margin: 15px 0px;
+    border-radius: 2%; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina3 img:hover {
+      transform: scale(1.1) translate(5px, 5px);
+      transition: .3s;
+      border-radius: 2%; }
+  .main-index .contenedorSecciones .seccionPiscinas .piscina3 .contenidoPiscinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina3 .contenidoPiscinas p {
+      font-size: 20px;
+      margin: 10px 0px;
+      color: black; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina3 .contenidoPiscinas a {
+      color: white;
+      text-decoration: none;
+      font-size: 33px; }
 
-.piscina1,
-.piscina2,
-.piscina3,
-img:hover {
-   transform: scale(1.1) translate(5px, 5px);
-   transition: .3s;
-   border-radius: 2%;
-}
+.main-piscinas .textoPrincipal {
+  color: #002F6C;
+  text-align: center;
+  font-size: 50px;
+  margin: 35px 0px;
+  font-weight: bold; }
 
-.contenedorSecciones {
-   height: 100px;
-}
+.main-piscinas .parrafoPrincipal {
+  font-size: 20px;
+  text-align: center; }
 
-.seccionPiscinas {
-   display: flex;
-   justify-content: space-around;
-}
+.main-piscinas .contenedorSecciones .seccion1 .seccionPiscinas {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  .main-piscinas .contenedorSecciones .seccion1 .seccionPiscinas .piscina1 img {
+    width: 300px;
+    margin: 15px 0px;
+    border-radius: 2%; }
+  .main-piscinas .contenedorSecciones .seccion1 .seccionPiscinas .piscina1:hover {
+    transform: scale(1.1) translate(5px, 5px);
+    transition: .3s;
+    border-radius: 2%; }
+  .main-piscinas .contenedorSecciones .seccion1 .seccionPiscinas .piscina1 .contenidoPiscinas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-piscinas .contenedorSecciones .seccion1 .seccionPiscinas .piscina1 .contenidoPiscinas p {
+      color: #002F6C;
+      font-size: 25px;
+      font-weight: bold; }
 
-.seccionPiscinas .contenidoPiscinas {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-}
+.main-piscinas .contenedorSecciones .seccion1 .piscina2 img {
+  width: 300px;
+  margin: 15px 0px;
+  border-radius: 2%; }
 
-.seccionPiscinas .contenidoPiscinas p {
-   font-size: 20px;
-   margin-top: 10px;
-}
+.main-piscinas .contenedorSecciones .seccion1 .piscina2:hover {
+  transform: scale(1.1) translate(5px, 5px);
+  transition: .3s;
+  border-radius: 2%; }
 
-.seccionPiscinas .contenidoPiscinas a {
-   color: white;
-   text-decoration: none;
-   font-size: 33px;
-}
+.main-piscinas .contenedorSecciones .seccion1 .piscina2 .contenidoPiscinas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-piscinas .contenedorSecciones .seccion1 .piscina2 .contenidoPiscinas p {
+    color: #002F6C;
+    font-size: 25px;
+    font-weight: bold; }
 
+.main-piscinas .contenedorSecciones .piscina3 img {
+  width: 300px;
+  margin: 15px 0px;
+  border-radius: 2%; }
 
-/* FOOTER */
+.main-piscinas .contenedorSecciones .piscina3:hover {
+  transform: scale(1.1) translate(5px, 5px);
+  transition: .3s;
+  border-radius: 2%; }
+
+.main-piscinas .contenedorSecciones .piscina3 .contenidoPiscinas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-piscinas .contenedorSecciones .piscina3 .contenidoPiscinas p {
+    color: #002F6C;
+    font-size: 25px;
+    font-weight: bold; }
+
+.main-piscinas .contenedorSecciones .piscina4 img {
+  width: 300px;
+  margin: 15px 0px;
+  border-radius: 2%; }
+
+.main-piscinas .contenedorSecciones .piscina4:hover {
+  transform: scale(1.1) translate(5px, 5px);
+  transition: .3s;
+  border-radius: 2%; }
+
+.main-piscinas .contenedorSecciones .piscina4 .contenidoPiscinas {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-piscinas .contenedorSecciones .piscina4 .contenidoPiscinas p {
+    color: #002F6C;
+    font-size: 25px;
+    font-weight: bold; }
+
+.main-piscinas .seccion2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; }
+  .main-piscinas .seccion2 .contenido {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; }
+    .main-piscinas .seccion2 .contenido h2 {
+      margin: 15px 0px;
+      font-size: 40px;
+      color: #002F6C; }
+    .main-piscinas .seccion2 .contenido a {
+      text-decoration: none;
+      background-color: red;
+      color: white;
+      padding: 20px;
+      border-radius: 7%;
+      margin: 15px 0px; }
+
+.main-quienesSomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; }
+  .main-quienesSomos .contenidoPrincipal .textoPrincipal {
+    color: #002F6C;
+    text-align: center;
+    font-size: 50px;
+    margin: 35px 0px;
+    font-weight: bold; }
+  .main-quienesSomos .contenedorSecciones .contenidoSecciones {
+    max-width: 800px;
+    margin-bottom: 20px; }
+    .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos1 h2 {
+        font-size: 35px;
+        margin: 20px 0px;
+        color: black; }
+      .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos1 p {
+        text-align: center; }
+      .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos1 ul {
+        margin: 20px 0px; }
+    .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos2 h2 {
+        font-size: 35px;
+        margin: 20px 0px;
+        color: black; }
+      .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos2 h3 {
+        color: #002F6C;
+        margin: 18px 0px;
+        font-size: 28px; }
+      .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos2 p {
+        text-align: center; }
 
 footer {
-   background-color: #3ACFF1;
-}
+  background-color: #3ACFF1;
+  padding: 12px 0px;
+  height: 100%;
+  max-width: 100%; }
+  footer p {
+    color: #002F6C;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0px; }
+  footer ul {
+    display: flex;
+    justify-content: center; }
+    footer ul li {
+      list-style: none; }
+      footer ul li .fa-brands {
+        font-size: 50px;
+        margin: 0px 8px; }
+      footer ul li .fa-instagram,
+      footer ul li .fa-facebook {
+        color: #002F6C; }
+      footer ul li .fa-twitter,
+      footer ul li .fa-whatsapp {
+        color: white; }
 
-footer p {
-   color: white;
-   text-align: center;
-   font-size: 20px;
-   margin: 15px 0px;
-}
-
-footer ul .fa-brands {
-   font-size: 50px;
-   margin: 0px 8px;
-}
-
-
-footer ul {
-   display: flex;
-   justify-content: center;
-}
-
-footer ul li {
-   list-style: none;
-}
-
-footer ul .fa-instagram,
-.fa-facebook {
-   color: #002F6C;
-}
-
-footer ul .fa-twitter,
-.fa-whatsapp {
-   color: white;
-}
+@media (max-width: 567px) {
+  footer ul {
+    max-width: 100%; }
+  header nav {
+    max-width: 100%; }
+  .main-index .contenedorSecciones .seccionPiscinas .piscina1,
+  .main-index .contenedorSecciones .seccionPiscinas .piscina2,
+  .main-index .contenedorSecciones .seccionPiscinas .piscina3 img {
+    max-width: 100%; } }

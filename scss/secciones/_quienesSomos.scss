@@ -1,0 +1,67 @@
+.main-quienesSomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .contenidoPrincipal {
+        .textoPrincipal {
+            color: #002F6C;
+            text-align: center;
+            font-size: 50px;
+            margin: 35px 0px;
+            font-weight: bold;
+        }
+    }
+
+    .contenedorSecciones {
+        .contenidoSecciones {
+            max-width: 800px;
+            margin-bottom: 20px;
+
+            .seccionQuienesSomos1 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 35px;
+                    margin: 20px 0px;
+                    color: black;
+                }
+
+                p {
+                    text-align: center;
+                }
+
+                ul {
+                    margin: 20px 0px;
+
+                    li {}
+                }
+            }
+
+            .seccionQuienesSomos2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    font-size: 35px;
+                    margin: 20px 0px;
+                    color: black;
+                }
+
+                h3 {
+                    color: #002F6C;
+                    margin: 18px 0px;
+                    font-size: 28px;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

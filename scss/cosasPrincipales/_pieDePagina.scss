@@ -1,0 +1,39 @@
+footer {
+    background-color: #3ACFF1;
+    padding: 12px 0px;
+    height: 100%;
+    max-width: 100%;
+
+    p {
+        color: #002F6C;
+        text-align: center;
+        font-size: 20px;
+        margin: 15px 0px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+            list-style: none;
+
+            .fa-brands {
+                font-size: 50px;
+                margin: 0px 8px;
+            }
+
+            .fa-instagram,
+            .fa-facebook {
+                color: #002F6C;
+            }
+
+            .fa-twitter,
+            .fa-whatsapp {
+                color: white;
+            }
+
+        }
+
+    }
+}
