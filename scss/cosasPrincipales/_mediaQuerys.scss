@@ -1,4 +1,13 @@
-@media (max-width : 900px) {}
+@media (max-width : 900px) {
+
+    header {
+        nav {
+            .container-fluid {
+                flex-direction: row;
+            }
+        }
+    }
+}
 
 
 
@@ -10,11 +19,24 @@
     }
 
     header {
+
+        a {
+            img {
+                width: 150px;
+                margin: 0px 25px;
+            }
+        }
+
         nav {
             max-width: 100%;
         }
     }
 
+    .textoPrincipal {
+        font-size: 30px !important;
+    }
+
+    // Pagina principal
     .main-index {
         .contenedorSecciones {
             .seccionPiscinas {
@@ -26,8 +48,40 @@
                 }
 
             }
+
         }
     }
 
+    // Contacto
+    .main-contacto {
+        .contenedor {
+            .formulario {
+                form {
+                    width: 100%;
+                }
+            }
+        }
 
+    }
+
+    h3 {
+        font-size: 23px !important;
+        text-align: center;
+    }
+
+    // Piscinas
+    .main-piscinas {
+        .seccion2 {
+            .contenido {
+                h2 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 15px;
+                    text-align: center;
+                }
+            }
+        }
+    }
 }

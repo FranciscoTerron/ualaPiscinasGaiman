@@ -18,8 +18,8 @@ main {
   min-height: 85vh; }
 
 header {
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column !important;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
@@ -30,6 +30,9 @@ header {
   min-height: 10vh;
   max-width: 100%;
   top: 0; }
+  header nav .container-fluid {
+    display: flex;
+    flex-direction: column; }
   header nav ul {
     display: flex; }
     header nav ul li {
@@ -256,7 +259,8 @@ header {
         margin: 20px 0px;
         color: black; }
       .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos1 p {
-        text-align: center; }
+        text-align: center;
+        font-size: 21px; }
       .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos1 ul {
         margin: 20px 0px; }
     .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos2 {
@@ -272,7 +276,42 @@ header {
         margin: 18px 0px;
         font-size: 28px; }
       .main-quienesSomos .contenedorSecciones .contenidoSecciones .seccionQuienesSomos2 p {
-        text-align: center; }
+        text-align: center;
+        font-size: 21px; }
+
+.main-contacto .textoPrincipal {
+  font-size: 50px;
+  margin: 35px 0px;
+  font-weight: bold;
+  color: #002F6C;
+  text-align: center; }
+
+.main-contacto .contenedor {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center; }
+  .main-contacto .contenedor .formulario form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 567px;
+    padding: 10px 20px;
+    margin: 10px 0px; }
+    .main-contacto .contenedor .formulario form input {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 14px;
+      font-size: 17px;
+      border: none; }
+    .main-contacto .contenedor .formulario form .boton {
+      background-color: black;
+      color: #ffffff;
+      padding: 20px;
+      margin-top: 15px; }
+      .main-contacto .contenedor .formulario form .boton:hover {
+        cursor: pointer; }
 
 footer {
   background-color: #3ACFF1;
@@ -299,12 +338,31 @@ footer {
       footer ul li .fa-whatsapp {
         color: white; }
 
+@media (max-width: 900px) {
+  header nav .container-fluid {
+    flex-direction: row; } }
+
 @media (max-width: 567px) {
   footer ul {
     max-width: 100%; }
+  header a img {
+    width: 150px;
+    margin: 0px 25px; }
   header nav {
     max-width: 100%; }
+  .textoPrincipal {
+    font-size: 30px !important; }
   .main-index .contenedorSecciones .seccionPiscinas .piscina1,
   .main-index .contenedorSecciones .seccionPiscinas .piscina2,
   .main-index .contenedorSecciones .seccionPiscinas .piscina3 img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .main-contacto .contenedor .formulario form {
+    width: 100%; }
+  h3 {
+    font-size: 23px !important;
+    text-align: center; }
+  .main-piscinas .seccion2 .contenido h2 {
+    font-size: 26px; }
+  .main-piscinas .seccion2 .contenido p {
+    font-size: 15px;
+    text-align: center; } }

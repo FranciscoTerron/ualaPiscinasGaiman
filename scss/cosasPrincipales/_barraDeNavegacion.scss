@@ -1,6 +1,6 @@
 header {
-    display: flex;
-    flex-direction: column;
+    display: flex !important;
+    flex-direction: column !important;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
@@ -13,6 +13,11 @@ header {
     top: 0;
 
     nav {
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+        }
+
         ul {
             display: flex;
 
