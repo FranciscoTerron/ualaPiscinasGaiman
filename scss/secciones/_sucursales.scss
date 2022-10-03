@@ -1,0 +1,109 @@
+.main-sucursales {
+    .textoPrincipal {
+        color: #002F6C;
+        text-align: center;
+        font-size: 50px;
+        margin: 35px 0px;
+        font-weight: bold;
+    }
+
+    .contenedorSecciones {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .seccionComodoro {
+
+            margin: 10px;
+
+            .contenido {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+
+                h3 {
+                    color: #002F6C;
+                    margin: 18px 0px;
+                    font-size: 28px;
+                }
+
+                img {}
+
+                p {}
+
+                a {
+                    text-decoration: none;
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    border-radius: 7%;
+                    margin: 15px 0px;
+                }
+            }
+
+        }
+
+        .seccionGaiman {
+            margin: 10px;
+
+            .contenido {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+
+                h3 {
+                    color: #002F6C;
+                    margin: 18px 0px;
+                    font-size: 28px;
+                }
+
+                img {}
+
+                p {}
+
+                a {
+                    text-decoration: none;
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    border-radius: 7%;
+                    margin: 15px 0px !important;
+                }
+            }
+
+        }
+
+        .seccionNeuquen {
+            margin: 10px;
+
+            .contenido {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+
+                h3 {
+                    color: #002F6C;
+                    margin: 18px 0px;
+                    font-size: 28px;
+                }
+
+                img {}
+
+                p {}
+
+                a {
+                    text-decoration: none;
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    border-radius: 7%;
+                    margin: 15px 0px;
+                }
+            }
+
+        }
+    }
+}

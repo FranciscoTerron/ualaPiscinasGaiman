@@ -1,0 +1,59 @@
+.main-accesorios {
+
+
+    .textoPrincipal {
+        color: #002F6C;
+        text-align: center;
+        font-size: 50px;
+        margin: 35px 0px;
+        font-weight: bold;
+    }
+
+    .parrafoPrincipal {
+        font-size: 20px;
+        text-align: center;
+        margin: 0px 25px;
+    }
+
+
+
+    h2 {
+        margin: 15px 0px;
+        font-size: 40px;
+        color: #002F6C;
+        text-align: center;
+    }
+
+    .contenedorAccesorios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+
+
+
+        .contenedorImagen {
+            margin: 10px 34px;
+
+            .imagenContenedor {
+                max-width: 100%;
+                border-radius: 5%;
+                margin-bottom: 15px;
+
+                &:hover {
+                    transform: scale(1.1) translate(5px, 1px);
+                    transition: .3s;
+                    border-radius: 2%;
+                }
+            }
+
+            p {
+                color: #002F6C;
+                font-size: 25px;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+    }
+
+}

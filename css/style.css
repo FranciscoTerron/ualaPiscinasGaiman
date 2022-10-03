@@ -123,6 +123,30 @@ header {
       text-decoration: none;
       font-size: 33px; }
 
+.main-index .seccion2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; }
+  .main-index .seccion2 .contenido {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center; }
+    .main-index .seccion2 .contenido h2 {
+      margin: 15px 0px;
+      font-size: 40px;
+      color: #002F6C; }
+    .main-index .seccion2 .contenido a {
+      text-decoration: none;
+      background-color: red;
+      color: white;
+      padding: 20px;
+      border-radius: 7%;
+      margin: 15px 0px; }
+
 .main-piscinas .textoPrincipal {
   color: #002F6C;
   text-align: center;
@@ -313,6 +337,111 @@ header {
       .main-contacto .contenedor .formulario form .boton:hover {
         cursor: pointer; }
 
+.main-sucursales .textoPrincipal {
+  color: #002F6C;
+  text-align: center;
+  font-size: 50px;
+  margin: 35px 0px;
+  font-weight: bold; }
+
+.main-sucursales .contenedorSecciones {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .main-sucursales .contenedorSecciones .seccionComodoro {
+    margin: 10px; }
+    .main-sucursales .contenedorSecciones .seccionComodoro .contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap; }
+      .main-sucursales .contenedorSecciones .seccionComodoro .contenido h3 {
+        color: #002F6C;
+        margin: 18px 0px;
+        font-size: 28px; }
+      .main-sucursales .contenedorSecciones .seccionComodoro .contenido a {
+        text-decoration: none;
+        background-color: red;
+        color: white;
+        padding: 20px;
+        border-radius: 7%;
+        margin: 15px 0px; }
+  .main-sucursales .contenedorSecciones .seccionGaiman {
+    margin: 10px; }
+    .main-sucursales .contenedorSecciones .seccionGaiman .contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap; }
+      .main-sucursales .contenedorSecciones .seccionGaiman .contenido h3 {
+        color: #002F6C;
+        margin: 18px 0px;
+        font-size: 28px; }
+      .main-sucursales .contenedorSecciones .seccionGaiman .contenido a {
+        text-decoration: none;
+        background-color: red;
+        color: white;
+        padding: 20px;
+        border-radius: 7%;
+        margin: 15px 0px !important; }
+  .main-sucursales .contenedorSecciones .seccionNeuquen {
+    margin: 10px; }
+    .main-sucursales .contenedorSecciones .seccionNeuquen .contenido {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap; }
+      .main-sucursales .contenedorSecciones .seccionNeuquen .contenido h3 {
+        color: #002F6C;
+        margin: 18px 0px;
+        font-size: 28px; }
+      .main-sucursales .contenedorSecciones .seccionNeuquen .contenido a {
+        text-decoration: none;
+        background-color: red;
+        color: white;
+        padding: 20px;
+        border-radius: 7%;
+        margin: 15px 0px; }
+
+.main-accesorios .textoPrincipal {
+  color: #002F6C;
+  text-align: center;
+  font-size: 50px;
+  margin: 35px 0px;
+  font-weight: bold; }
+
+.main-accesorios .parrafoPrincipal {
+  font-size: 20px;
+  text-align: center;
+  margin: 0px 25px; }
+
+.main-accesorios h2 {
+  margin: 15px 0px;
+  font-size: 40px;
+  color: #002F6C;
+  text-align: center; }
+
+.main-accesorios .contenedorAccesorios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center; }
+  .main-accesorios .contenedorAccesorios .contenedorImagen {
+    margin: 10px 34px; }
+    .main-accesorios .contenedorAccesorios .contenedorImagen .imagenContenedor {
+      max-width: 100%;
+      border-radius: 5%;
+      margin-bottom: 15px; }
+      .main-accesorios .contenedorAccesorios .contenedorImagen .imagenContenedor:hover {
+        transform: scale(1.1) translate(5px, 1px);
+        transition: .3s;
+        border-radius: 2%; }
+    .main-accesorios .contenedorAccesorios .contenedorImagen p {
+      color: #002F6C;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center; }
+
 footer {
   background-color: #3ACFF1;
   padding: 12px 0px;
@@ -339,6 +468,8 @@ footer {
         color: white; }
 
 @media (max-width: 900px) {
+  .main-accesorios .contenedorAccesorios {
+    grid-template-columns: repeat(2, 1fr); }
   header nav .container-fluid {
     flex-direction: row; } }
 
@@ -365,4 +496,8 @@ footer {
     font-size: 26px; }
   .main-piscinas .seccion2 .contenido p {
     font-size: 15px;
-    text-align: center; } }
+    text-align: center; }
+  .main-accesorios .contenedorAccesorios {
+    grid-template-columns: repeat(1, 1fr); }
+  a {
+    padding: 10px !important; } }
