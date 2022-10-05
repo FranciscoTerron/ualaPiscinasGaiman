@@ -50,6 +50,11 @@
                 .piscina2,
                 .piscina3 img {
                     max-width: 100%;
+
+                    &:hover {
+                        transform: none;
+                        transition: none;
+                    }
                 }
 
             }
@@ -91,12 +96,58 @@
     }
 
     .main-accesorios {
+        h2 {
+            font-size: 25px;
+            margin: 15px 0px;
+        }
+
         .contenedorAccesorios {
             grid-template-columns: repeat(1, 1fr);
+
+            .contenedorImagen {
+                .imagenContenedor {
+                    &:hover {
+                        transform: none;
+                        transition: none;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    // Sucursales
+
+    .main-sucursales {
+        .contenedorSecciones {
+            .seccionComodoro {
+                p {
+                    text-align: center;
+                    margin: 10px 0px;
+                }
+            }
+
+            .seccionGaiman {
+                p {
+                    text-align: center;
+                    margin: 10px 0px;
+
+                }
+            }
+
+            .seccionNeuquen {
+                p {
+                    text-align: center;
+                    margin: 10px 0px;
+
+                }
+            }
         }
     }
 
     a {
+
         padding: 10px !important;
 
     }

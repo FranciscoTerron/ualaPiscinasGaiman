@@ -17,6 +17,13 @@ body {
 main {
   min-height: 85vh; }
 
+nav .migaDePan {
+  margin-left: 10px; }
+
+nav .migaDePan li {
+  font-size: 20px;
+  font-weight: bold; }
+
 header {
   display: flex !important;
   flex-direction: column !important;
@@ -45,6 +52,11 @@ header {
         font-size: 20px; }
         header nav ul li a:hover {
           color: black; }
+
+.main-index nav .migaDePan li {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0px 10px; }
 
 .main-index .textoPrincipal {
   font-size: 50px;
@@ -359,6 +371,10 @@ header {
         color: #002F6C;
         margin: 18px 0px;
         font-size: 28px; }
+      .main-sucursales .contenedorSecciones .seccionComodoro .contenido img {
+        margin-bottom: 15px; }
+      .main-sucursales .contenedorSecciones .seccionComodoro .contenido p {
+        text-align: center; }
       .main-sucursales .contenedorSecciones .seccionComodoro .contenido a {
         text-decoration: none;
         background-color: red;
@@ -377,6 +393,8 @@ header {
         color: #002F6C;
         margin: 18px 0px;
         font-size: 28px; }
+      .main-sucursales .contenedorSecciones .seccionGaiman .contenido img {
+        margin-bottom: 15px; }
       .main-sucursales .contenedorSecciones .seccionGaiman .contenido a {
         text-decoration: none;
         background-color: red;
@@ -395,6 +413,8 @@ header {
         color: #002F6C;
         margin: 18px 0px;
         font-size: 28px; }
+      .main-sucursales .contenedorSecciones .seccionNeuquen .contenido img {
+        margin-bottom: 15px; }
       .main-sucursales .contenedorSecciones .seccionNeuquen .contenido a {
         text-decoration: none;
         background-color: red;
@@ -487,6 +507,11 @@ footer {
   .main-index .contenedorSecciones .seccionPiscinas .piscina2,
   .main-index .contenedorSecciones .seccionPiscinas .piscina3 img {
     max-width: 100%; }
+    .main-index .contenedorSecciones .seccionPiscinas .piscina1:hover,
+    .main-index .contenedorSecciones .seccionPiscinas .piscina2:hover,
+    .main-index .contenedorSecciones .seccionPiscinas .piscina3 img:hover {
+      transform: none;
+      transition: none; }
   .main-contacto .contenedor .formulario form {
     width: 100%; }
   h3 {
@@ -497,7 +522,22 @@ footer {
   .main-piscinas .seccion2 .contenido p {
     font-size: 15px;
     text-align: center; }
+  .main-accesorios h2 {
+    font-size: 25px;
+    margin: 15px 0px; }
   .main-accesorios .contenedorAccesorios {
     grid-template-columns: repeat(1, 1fr); }
+    .main-accesorios .contenedorAccesorios .contenedorImagen .imagenContenedor:hover {
+      transform: none;
+      transition: none; }
+  .main-sucursales .contenedorSecciones .seccionComodoro p {
+    text-align: center;
+    margin: 10px 0px; }
+  .main-sucursales .contenedorSecciones .seccionGaiman p {
+    text-align: center;
+    margin: 10px 0px; }
+  .main-sucursales .contenedorSecciones .seccionNeuquen p {
+    text-align: center;
+    margin: 10px 0px; }
   a {
     padding: 10px !important; } }

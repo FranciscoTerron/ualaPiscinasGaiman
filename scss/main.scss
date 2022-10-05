@@ -25,6 +25,15 @@ main {
 
 }
 
+nav .migaDePan {
+    margin-left: 10px;
+}
+
+nav .migaDePan li {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 // Importo las hojas parciales
 
 @import './cosasPrincipales/barraDeNavegacion';
