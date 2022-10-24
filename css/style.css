@@ -13,6 +13,12 @@ body {
   flex-direction: column;
   min-height: 100vh; }
 
+.migaDePan li a {
+  text-decoration: none;
+  color: white; }
+  .migaDePan li a:hover {
+    color: black; }
+
 /* Main Principal */
 main {
   min-height: 85vh; }
@@ -22,7 +28,8 @@ nav .migaDePan {
 
 nav .migaDePan li {
   font-size: 20px;
-  font-weight: bold; }
+  font-weight: bold;
+  color: black !important; }
 
 header {
   display: flex !important;
@@ -211,40 +218,40 @@ header {
     font-size: 25px;
     font-weight: bold; }
 
-.main-piscinas .contenedorSecciones .piscina3 img {
+.main-piscinas .contenedorSecciones .seccion1 .piscina3 img {
   width: 300px;
   margin: 15px 0px;
   border-radius: 2%; }
 
-.main-piscinas .contenedorSecciones .piscina3:hover {
+.main-piscinas .contenedorSecciones .seccion1 .piscina3:hover {
   transform: scale(1.1) translate(5px, 5px);
   transition: .3s;
   border-radius: 2%; }
 
-.main-piscinas .contenedorSecciones .piscina3 .contenidoPiscinas {
+.main-piscinas .contenedorSecciones .seccion1 .piscina3 .contenidoPiscinas {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .main-piscinas .contenedorSecciones .piscina3 .contenidoPiscinas p {
+  .main-piscinas .contenedorSecciones .seccion1 .piscina3 .contenidoPiscinas p {
     color: #002F6C;
     font-size: 25px;
     font-weight: bold; }
 
-.main-piscinas .contenedorSecciones .piscina4 img {
+.main-piscinas .contenedorSecciones .seccion1 .piscina4 img {
   width: 300px;
   margin: 15px 0px;
   border-radius: 2%; }
 
-.main-piscinas .contenedorSecciones .piscina4:hover {
+.main-piscinas .contenedorSecciones .seccion1 .piscina4:hover {
   transform: scale(1.1) translate(5px, 5px);
   transition: .3s;
   border-radius: 2%; }
 
-.main-piscinas .contenedorSecciones .piscina4 .contenidoPiscinas {
+.main-piscinas .contenedorSecciones .seccion1 .piscina4 .contenidoPiscinas {
   display: flex;
   flex-direction: column;
   align-items: center; }
-  .main-piscinas .contenedorSecciones .piscina4 .contenidoPiscinas p {
+  .main-piscinas .contenedorSecciones .seccion1 .piscina4 .contenidoPiscinas p {
     color: #002F6C;
     font-size: 25px;
     font-weight: bold; }
@@ -322,32 +329,57 @@ header {
   color: #002F6C;
   text-align: center; }
 
-.main-contacto .contenedor {
+.main-contacto .contenedor .contenidoInfoContacto {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center; }
-  .main-contacto .contenedor .formulario form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 567px;
-    padding: 10px 20px;
-    margin: 10px 0px; }
-    .main-contacto .contenedor .formulario form input {
-      width: 100%;
-      margin-bottom: 20px;
-      padding: 14px;
-      font-size: 17px;
-      border: none; }
-    .main-contacto .contenedor .formulario form .boton {
-      background-color: black;
-      color: #ffffff;
-      padding: 20px;
-      margin-top: 15px; }
-      .main-contacto .contenedor .formulario form .boton:hover {
-        cursor: pointer; }
+  .main-contacto .contenedor .contenidoInfoContacto h2 {
+    font-size: 35px;
+    color: white;
+    text-align: center; }
+  .main-contacto .contenedor .contenidoInfoContacto a {
+    text-decoration: none;
+    background-color: red;
+    color: white;
+    padding: 20px;
+    border-radius: 2%;
+    margin: 15px 0px;
+    text-align: center; }
+    .main-contacto .contenedor .contenidoInfoContacto a:hover {
+      color: black;
+      background-color: white; }
+
+.main-contacto .contenedor .ubicacionWalaPiscinasGaiman {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0px; }
+  .main-contacto .contenedor .ubicacionWalaPiscinasGaiman iframe {
+    margin-top: 15px;
+    border-radius: 2%;
+    max-width: 100%; }
+
+.main-contacto .contenedor .infoImportante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0px; }
+  .main-contacto .contenedor .infoImportante h2 {
+    font-size: 35px;
+    color: white;
+    text-align: center; }
+  .main-contacto .contenedor .infoImportante a {
+    text-decoration: none;
+    color: black; }
+    .main-contacto .contenedor .infoImportante a:hover {
+      color: red; }
+  .main-contacto .contenedor .infoImportante strong {
+    font-size: 25px; }
 
 .main-sucursales .textoPrincipal {
   color: #002F6C;
@@ -512,11 +544,29 @@ footer {
     .main-index .contenedorSecciones .seccionPiscinas .piscina3 img:hover {
       transform: none;
       transition: none; }
-  .main-contacto .contenedor .formulario form {
-    width: 100%; }
+  .main-contacto .contenedor .contenidoInfoContacto a {
+    padding: 10px !important; }
+  .main-contacto .contenedor .contenidoInfoContacto h2 {
+    font-size: 25px; }
+  .main-contacto .contenedor .infoImportante h2 {
+    font-size: 25px; }
+  .main-contacto .contenedor .infoImportante a strong {
+    font-size: 18px; }
   h3 {
     font-size: 23px !important;
     text-align: center; }
+  .main-piscinas .seccion1 .seccionPiscinas .piscina1:hover {
+    transform: none;
+    transition: none; }
+  .main-piscinas .seccion1 .seccionPiscinas .piscina2:hover {
+    transform: none;
+    transition: none; }
+  .main-piscinas .seccion1 .seccionPiscinas .piscina3:hover {
+    transform: none;
+    transition: none; }
+  .main-piscinas .seccion1 .seccionPiscinas .piscina4:hover {
+    transform: none;
+    transition: none; }
   .main-piscinas .seccion2 .contenido h2 {
     font-size: 26px; }
   .main-piscinas .seccion2 .contenido p {
@@ -539,5 +589,7 @@ footer {
   .main-sucursales .contenedorSecciones .seccionNeuquen p {
     text-align: center;
     margin: 10px 0px; }
+  p {
+    font-size: 18px !important; }
   a {
     padding: 10px !important; } }

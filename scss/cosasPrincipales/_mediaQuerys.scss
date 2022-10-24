@@ -65,9 +65,26 @@
     // Contacto
     .main-contacto {
         .contenedor {
-            .formulario {
-                form {
-                    width: 100%;
+            .contenidoInfoContacto {
+                a {
+                    padding: 10px !important;
+                }
+
+                h2 {
+                    font-size: 25px;
+                }
+            }
+
+
+            .infoImportante {
+                h2 {
+                    font-size: 25px;
+                }
+
+                a {
+                    strong {
+                        font-size: 18px;
+                    }
                 }
             }
         }
@@ -81,6 +98,39 @@
 
     // Piscinas
     .main-piscinas {
+        .seccion1 {
+            .seccionPiscinas {
+                .piscina1 {
+                    &:hover {
+                        transform: none;
+                        transition: none;
+                    }
+                }
+
+                .piscina2 {
+                    &:hover {
+                        transform: none;
+                        transition: none;
+                    }
+                }
+
+                .piscina3 {
+                    &:hover {
+                        transform: none;
+                        transition: none;
+                    }
+                }
+
+                .piscina4 {
+                    &:hover {
+                        transform: none;
+                        transition: none;
+                    }
+                }
+            }
+        }
+
+
         .seccion2 {
             .contenido {
                 h2 {
@@ -146,9 +196,12 @@
         }
     }
 
+    p {
+        font-size: 18px !important;
+    }
+
     a {
 
         padding: 10px !important;
-
     }
 }
