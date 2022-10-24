@@ -29,31 +29,36 @@
         grid-template-columns: repeat(3, 1fr);
         align-items: center;
         justify-content: center;
+        justify-items: center;
 
+        .card {
+            margin: 25px 0px;
 
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
-        .contenedorImagen {
-            margin: 10px 34px;
+                h5 {
+                    text-align: center;
+                    color: #002F6C;
+                }
 
-            .imagenContenedor {
-                max-width: 100%;
-                border-radius: 5%;
-                margin-bottom: 15px;
+                p {
+                    color: black;
+                }
 
-                &:hover {
-                    transform: scale(1.1) translate(5px, 1px);
-                    transition: .3s;
-                    border-radius: 2%;
+                a {
+                    background-color: #002F6C;
+
+                    &:hover {
+                        background-color: white;
+                        color: black;
+                    }
                 }
             }
-
-            p {
-                color: #002F6C;
-                font-size: 25px;
-                font-weight: bold;
-                text-align: center;
-            }
         }
+
     }
 
 }

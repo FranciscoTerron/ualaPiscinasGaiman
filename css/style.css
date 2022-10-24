@@ -166,16 +166,23 @@ header {
       border-radius: 7%;
       margin: 15px 0px; }
 
-.main-piscinas .textoPrincipal {
-  color: #002F6C;
-  text-align: center;
-  font-size: 50px;
-  margin: 35px 0px;
-  font-weight: bold; }
-
-.main-piscinas .parrafoPrincipal {
-  font-size: 20px;
-  text-align: center; }
+.main-piscinas .tituloPrincipal {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .main-piscinas .tituloPrincipal .textoPrincipal {
+    color: #002F6C;
+    text-align: center;
+    font-size: 50px;
+    margin: 35px 0px;
+    font-weight: bold; }
+  .main-piscinas .tituloPrincipal .parrafoPrincipal {
+    font-size: 20px;
+    text-align: center;
+    max-width: 800px;
+    border-radius: 5%;
+    padding: 10px;
+    margin-bottom: 15px; }
 
 .main-piscinas .contenedorSecciones .seccion1 .seccionPiscinas {
   display: flex;
@@ -344,7 +351,8 @@ header {
     padding: 20px;
     border-radius: 2%;
     margin: 15px 0px;
-    text-align: center; }
+    text-align: center;
+    font-size: 18px; }
     .main-contacto .contenedor .contenidoInfoContacto a:hover {
       color: black;
       background-color: white; }
@@ -477,22 +485,24 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: center; }
-  .main-accesorios .contenedorAccesorios .contenedorImagen {
-    margin: 10px 34px; }
-    .main-accesorios .contenedorAccesorios .contenedorImagen .imagenContenedor {
-      max-width: 100%;
-      border-radius: 5%;
-      margin-bottom: 15px; }
-      .main-accesorios .contenedorAccesorios .contenedorImagen .imagenContenedor:hover {
-        transform: scale(1.1) translate(5px, 1px);
-        transition: .3s;
-        border-radius: 2%; }
-    .main-accesorios .contenedorAccesorios .contenedorImagen p {
-      color: #002F6C;
-      font-size: 25px;
-      font-weight: bold;
-      text-align: center; }
+  justify-content: center;
+  justify-items: center; }
+  .main-accesorios .contenedorAccesorios .card {
+    margin: 25px 0px; }
+    .main-accesorios .contenedorAccesorios .card .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .main-accesorios .contenedorAccesorios .card .card-body h5 {
+        text-align: center;
+        color: #002F6C; }
+      .main-accesorios .contenedorAccesorios .card .card-body p {
+        color: black; }
+      .main-accesorios .contenedorAccesorios .card .card-body a {
+        background-color: #002F6C; }
+        .main-accesorios .contenedorAccesorios .card .card-body a:hover {
+          background-color: white;
+          color: black; }
 
 footer {
   background-color: #3ACFF1;
