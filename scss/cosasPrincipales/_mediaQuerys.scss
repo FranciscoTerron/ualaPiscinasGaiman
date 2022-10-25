@@ -34,6 +34,10 @@
 
         nav {
             max-width: 100%;
+
+            a {
+                font-size: 20px !important;
+            }
         }
     }
 
@@ -59,6 +63,17 @@
 
             }
 
+        }
+
+        .seccion3 {
+            .catalogo {
+                .catalogoInfo {
+                    h2 {
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 

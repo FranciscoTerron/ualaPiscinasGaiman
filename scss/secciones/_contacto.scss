@@ -37,54 +37,77 @@
             }
         }
 
-        .ubicacionWalaPiscinasGaiman {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-            align-content: center;
-            justify-content: space-around;
-            align-items: center;
-            margin: 30px 0px;
+        // .ubicacionWalaPiscinasGaiman {
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     flex-direction: column;
+        //     width: 100%;
+        //     height: 100%;
+        //     align-content: center;
+        //     justify-content: space-around;
+        //     align-items: center;
+        //     margin: 30px 0px;
 
-            iframe {
-                margin-top: 15px;
-                border-radius: 2%;
-                max-width: 100%;
-            }
+        //     iframe {
+        //         margin-top: 15px;
+        //         border-radius: 2%;
+        //         max-width: 100%;
+        //     }
 
-        }
+        // }
 
         .infoImportante {
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 50px 0px;
 
-            h2 {
-                font-size: 35px;
-                color: white;
-                text-align: center;
-            }
+            form {
+                display: flex;
+                flex-direction: column;
+                background-color: #3ACFF1;
+                width: 579px;
+                border-radius: 5%;
+                padding: 24px 20px;
+                margin: 30px 40px;
 
-            a {
-                text-decoration: none;
-                color: black;
+                h2 {
+                    font-size: 40px;
+                    color: #002F6C;
+                    font-weight: bold;
+                    text-align: center;
+                }
 
-                &:hover {
-                    color: red;
+                input {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    padding: 14px;
+                    font-size: 17px;
+                    border: none;
+                }
+
+
+
+                textarea {
+                    min-height: 100px;
+                    max-height: 200px;
+                    width: 100%;
+                }
+
+                #boton {
+                    background-color: black;
+                    color: #ffffff;
+                    padding: 20px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
 
-            strong {
-                font-size: 25px;
-
-            }
-
         }
-    }
 
+
+    }
 
 
 }

@@ -158,36 +158,33 @@
         }
     }
 
-    // .contenido {
-    //     display: flex;
-    //     justify-content: center;
-
-    //     .contenidoExtra {
-    //         display: flex;
-    //         flex-direction: column;
-    //         max-width: 800px;
-    //         padding-right: 15px;
-    //         padding-left: 15px;
-    //         height: 456px;
-
-    //         .titulo {
-    //             color: #002F6C;
-    //             margin: 18px 0px;
-    //             font-size: 28px;
-    //             text-align: center;
-    //         }
-
-    //         a {
-    //             text-decoration: none;
-    //             background-color: red;
-    //             color: white;
-    //             padding: 20px;
-    //             border-radius: 7%;
-    //             margin: 15px 0px;
-    //             text-align: center;
-    //         }
-    //     }
+    .seccion3 {
 
 
-    // }
+        .catalogo {
+            display: flex;
+            justify-content: center;
+            background-color: #002F6C;
+            padding: 30px 0px 30px 0px;
+
+            h2 {
+                font-size: 40px;
+                color: white;
+
+
+                a {
+                    text-decoration: none;
+                    font-size: 30px;
+                    margin-left: 15px;
+
+                    &:hover {
+                        color: black;
+                        font-weight: bold;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+
+    }
 }
